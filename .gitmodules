@@ -1,0 +1,6 @@
+[submodule "crates/agent"]
+	path = crates/agent
+	url = https://github.com/softfaulty/runescript-agent.git
+[submodule "crates/session"]
+	path = crates/session
+	url = https://github.com/softfaulty/runescript-session.git
