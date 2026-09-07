@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>RuneScript</title><script type="module" src="/src/main.ts" defer></script></head>
+<body>
+<header><strong>RuneScript</strong><span class="separator">/</span><span id="game">DELTARUNE</span><select id="process" aria-label="DELTARUNE process" hidden></select><span id="status" role="status">Detecting…</span></header>
+<main>
+<div class="tabbar"><span class="tab">scratch.js</span><span class="language">JavaScript · JavaScriptCore</span></div>
+<div id="editor" aria-label="JavaScript editor"></div>
+<div id="splitter" role="separator" aria-label="Resize output" aria-orientation="horizontal" tabindex="0"></div>
+<section id="output-panel" aria-label="Output"><div class="output-title">Output <span id="line-count">0</span><button id="clear" title="Clear output">Clear</button></div><div id="output" role="log" aria-live="polite"></div></section>
+</main>
+<footer><button id="inject">Inject</button><button id="detach" disabled>Detach</button><button id="reset" disabled>Reset Runtime</button><span id="hint">Persistent session</span><button id="run" disabled>Run <kbd>⌘↵</kbd></button></footer>
+</body>
+</html>

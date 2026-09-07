@@ -1,0 +1,12 @@
+[workspace]
+members = ["crates/agent", "crates/session", "src-tauri"]
+resolver = "2"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+
+[profile.dev]
+debug = 0
+incremental = false

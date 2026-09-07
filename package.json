@@ -1,0 +1,25 @@
+{
+  "name": "runescript",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "typecheck": "tsc --noEmit",
+    "agent:build": "cargo build -p runescript-agent",
+    "native:test": "cargo test -p runescript-session",
+    "desktop": "bun run agent:build && bun run tauri dev"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "monaco-editor": "^0.56.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2",
+    "vite": "^8.0.16",
+    "typescript": "~6.0.3"
+  }
+}
